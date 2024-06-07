@@ -47,8 +47,8 @@
 .btn-hover.color-2 {
     background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
-    height: 20px;
-    width: 30px;
+    height: 200px;
+    width: 300px;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
