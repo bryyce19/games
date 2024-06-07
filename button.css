@@ -26,8 +26,7 @@
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
-
-    border-radius: 50px;
+    text-decoration: none;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
