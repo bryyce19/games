@@ -20,6 +20,12 @@
     text-align:center;
     border: none;
     background-size: 300% 100%;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
 
     border-radius: 50px;
     moz-transition: all .4s ease-in-out;
@@ -46,14 +52,7 @@
 }
 .btn-hover.color-2 {
     background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
-    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
-    height: 200px;
-    width: 300px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 10px;
-    margin-top: 5px;
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);;
 }
 .btn-hover.color-3 {
     background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
