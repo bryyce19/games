@@ -96,3 +96,12 @@
     color: transparent;
     font-style: normal;
 }
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-container a {
+    margin: 10px 0;
+  }
