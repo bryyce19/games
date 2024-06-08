@@ -15,12 +15,11 @@
     font-weight: 600;
     color: #fff;
     cursor: pointer;
-    margin: 20px;
+    margin: 10px 16px 10px 0;
     height: 55px;
     text-align:center;
     border: none;
     background-size: 300% 100%;
-    padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -95,10 +94,4 @@
     background-image: linear-gradient(90deg, #e85a19, #f5ce62);
     color: transparent;
     font-style: normal;
-}
-.btn-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* This controls the spacing between the buttons */
 }
