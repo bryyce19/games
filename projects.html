@@ -89,10 +89,11 @@
         </button>
       </a>
     </p>
+    <link rel="stylesheet" href="button.css">
     <a id="back-to-top" class="btn-hover color-2">Back to Top</a><br />
     <script>
       let games = [];
-      fetch("config/games.json")
+      fetch("/games/config/games.json")
       .then((response) => response.json())
       .then((data) => {
         games = data;
@@ -137,6 +138,7 @@
             backToTopButton.style.display = "block";
           } else {
           backToTopButton.style.display = "none";
+          behavior: 'smooth'
         }
       };
 
