@@ -14,33 +14,6 @@
   <link rel="shortcut-icon" href="/games/favicon.ico" />
   <script src="/games/js/main.js"></script>
   <style>
-    body {
-      background-color: #121212;
-      color: #ffffff;
-      font-family: sans-serif;
-      text-align: center;
-      overflow-x: hidden;
-    }
-
-    h1 {
-      font-size: 3em;
-    }
-
-    .small-text {
-      font-size: 0.8em;
-      color: #ffffff;
-      margin-top: 10px;
-    }
-
-    .small-text a {
-      color: #3498db;
-      text-decoration: none;
-    }
-
-    .small-text a:hover {
-      text-decoration: underline;
-    }
-
     p {
       text-align: center;
       max-width: 600px;
@@ -76,7 +49,9 @@
     }
 
     .game-tile {
-      background: rgba(255, 255, 255, 0.1);
+      background-color: #949494;
+      height: 100%;
+      width: 100%;
       border-radius: 20px;
       overflow: hidden;
       display: flex;
@@ -84,9 +59,6 @@
       align-items: center;
       justify-content: center;
       transition: box-shadow 0.3s;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 2px solid rgba(255, 255, 255, 0.25);
     }
 
     .game-icon {
@@ -97,24 +69,23 @@
     }
 
     .game-title {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: bold;
-      color: #ffffff;
+      color: #000000;
       text-align: center;
       margin: auto;
       transition: text-shadow 0.3s;
-      padding: 10px 0;
-      max-width: 90%;
-      box-sizing: border-box;
     }
 
     .game-link:hover .game-title {
-      text-shadow: 0 0 10px #ff8c00;
+      text-shadow: 0 0 10px #ffffff;
     }
 
     .flex-container {
       display: flex;
       flex-direction: row;
+      order: 0;
+      flex-grow: 0;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
@@ -125,61 +96,19 @@
       box-sizing: border-box;
     }
 
-    .blurred-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      overflow: hidden;
+    .small-text {
+      font-size: 0.8em;
+      color: #ffffff;
+      margin-top: 10px;
     }
 
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.6;
+    .small-text a {
+      color: #3498db;
+      text-decoration: none;
     }
 
-    .circle:nth-child(1) {
-      background: #ff8c00;
-      width: 400px;
-      height: 400px;
-      top: 5%;
-      left: 10%;
-    }
-
-    .circle:nth-child(2) {
-      background: #a4508b;
-      width: 600px;
-      height: 600px;
-      top: 25%;
-      right: 5%;
-    }
-
-    .circle:nth-child(3) {
-      background: #ff8c00;
-      width: 500px;
-      height: 500px;
-      top: 55%;
-      left: 15%;
-    }
-
-    .circle:nth-child(4) {
-      background: #a4508b;
-      width: 700px;
-      height: 700px;
-      top: 85%;
-      right: 10%;
-    }
-
-    .circle:nth-child(5) {
-      background: #ff8c00;
-      width: 800px;
-      height: 800px;
-      top: 115%;
-      left: 5%;
+    .small-text a:hover {
+      text-decoration: underline;
     }
 
     @keyframes spin {
@@ -191,32 +120,13 @@
         transform: rotate(360deg);
       }
     }
-
-    #loader {
-      display: block;
-      border: 16px solid #f3f3f3;
-      border-top: 16px solid #3498db;
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      animation: spin 0.3s linear infinite;
-      margin: auto;
-      margin-top: 1rem;
-    }
   </style>
 </head>
-<body>
-  <div class="blurred-bg">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-  </div>
-  <h1>Games</h1>
+<body style="background-color: #121212; color: #ffffff; font-family: sans-serif; text-decoration: none; text-align: center;">
+  <h1 style="font-size: 3em; text-align: center;">Games</h1>
   <p class="small-text">Want a specific game? To request games, fill out <a href="https://your-google-form-link-here" target="_blank">THIS</a> form!</p>
   <input type="text" id="search" onkeyup="searchGames()" placeholder="Search for games..." style="width: 100%; font-size: 18px; padding: 6px 20px; margin: auto; border-radius: 30px; max-width: 600px; margin-bottom: 10px;" />
-  <div id="loader"></div>
+  <div id="loader" style="display: block; border: 16px solid #f3f3f3; border-top: 16px solid #3498db; border-radius: 50%; width: 120px; height: 120px; animation: spin 0.3s linear infinite; margin: auto; margin-top: 1rem;"></div>
   <div id="game-container" class="flex-container"></div>
   <p class="text-center">
     <a href="/games" style="text-decoration: none;">
