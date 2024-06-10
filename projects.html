@@ -86,7 +86,7 @@
       transition: box-shadow 0.3s;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      border: 2px solid rgba(255, 255, 255, 0.25);
     }
 
     .game-icon {
@@ -97,16 +97,19 @@
     }
 
     .game-title {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
-      color: #000000;
+      color: #ffffff;
       text-align: center;
       margin: auto;
       transition: text-shadow 0.3s;
+      padding: 10px 0;
+      max-width: 90%;
+      box-sizing: border-box;
     }
 
     .game-link:hover .game-title {
-      text-shadow: 0 0 10px #ffffff;
+      text-shadow: 0 0 10px #ff8c00;
     }
 
     .flex-container {
@@ -139,20 +142,44 @@
       opacity: 0.6;
     }
 
-    .circle-purple {
-      background: #a4508b;
+    .circle:nth-child(1) {
+      background: #ff8c00;
       width: 400px;
       height: 400px;
-      top: 20%;
+      top: 5%;
       left: 10%;
     }
 
-    .circle-blue {
-      background: #5f0a87;
+    .circle:nth-child(2) {
+      background: #a4508b;
       width: 600px;
       height: 600px;
-      top: 50%;
+      top: 25%;
       right: 5%;
+    }
+
+    .circle:nth-child(3) {
+      background: #ff8c00;
+      width: 500px;
+      height: 500px;
+      top: 55%;
+      left: 15%;
+    }
+
+    .circle:nth-child(4) {
+      background: #a4508b;
+      width: 700px;
+      height: 700px;
+      top: 85%;
+      right: 10%;
+    }
+
+    .circle:nth-child(5) {
+      background: #ff8c00;
+      width: 800px;
+      height: 800px;
+      top: 115%;
+      left: 5%;
     }
 
     @keyframes spin {
@@ -180,8 +207,11 @@
 </head>
 <body>
   <div class="blurred-bg">
-    <div class="circle circle-purple"></div>
-    <div class="circle circle-blue"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
   </div>
   <h1>Games</h1>
   <p class="small-text">Want a specific game? To request games, fill out <a href="https://your-google-form-link-here" target="_blank">THIS</a> form!</p>
