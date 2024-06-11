@@ -2,9 +2,9 @@ document.addEventListener('mousemove', (event) => {
     const glow = document.querySelector('.glow');
     const { clientX: x, clientY: y } = event;
 
-    // Get the dimensions of the glow element
-    const glowWidth = glow.offsetWidth;
-    const glowHeight = glow.offsetHeight;
+    // Set the dimensions of the glow element
+    const glowWidth = 150;
+    const glowHeight = 150;
 
     // Adjust the position so the glow is centered on the mouse pointer
     glow.style.transform = `translate(${x - glowWidth / 2}px, ${y - glowHeight / 2}px)`;

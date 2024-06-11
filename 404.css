@@ -57,8 +57,8 @@ a:hover {
 
 .glow {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: rgba(255, 87, 34, 0.6);
     border-radius: 50%;
     filter: blur(100px);
