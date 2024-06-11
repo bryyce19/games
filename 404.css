@@ -48,15 +48,19 @@ a {
     background: #ff5722;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    border: 2px solid transparent;
 }
 
 a:hover {
     background: #ff3d00;
+    border-color: #ff5722;
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.6), 0 0 25px rgba(255, 87, 34, 0.4), 0 0 35px rgba(255, 87, 34, 0.3);
 }
 
 .glow {
-    position: absolute;
+    position: fixed; /* revert from abs to fixed */
     width: 150px;
     height: 150px;
     background: rgba(255, 87, 34, 0.6);
