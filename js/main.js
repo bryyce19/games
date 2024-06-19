@@ -1,7 +1,7 @@
 console.warn(
   "%cWAIT!!",
   "color: red; font-weight: 600; background: yellow; padding: 0 5px; border-radius: 5px",
-  "Do NOT post code here if you don't know what you're doing! Ask Bryce for help before exexuting within the console. Stay safe!"
+  "Do NOT post code here if you don't know what you're doing! Ask Bryce for help before executing within the console. Stay safe!"
 );
 
 // this setting controls if ads are shown,
