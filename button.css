@@ -1,7 +1,37 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    cursor: none; /* Hide the default cursor */
+}
+
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 8px orange, 0 0 12px orange, 0 0 16px orange;
+    transition: transform 0.1s ease-out;
+}
+
+.trail {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background-color: orange;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 8px orange;
+    transition: transform 0.1s ease-out;
 }
 
 .buttons {
